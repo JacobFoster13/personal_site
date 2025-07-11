@@ -1,0 +1,17 @@
+body {
+    background-color: azure;
+}
+
+footer {
+    background-color: black;
+    padding: 8px;
+}
+
+.fa-brands, .fa-solid {
+    margin: 4px;
+    color: white;
+}
+
+.socials {
+    font-size: 36px;
+}
