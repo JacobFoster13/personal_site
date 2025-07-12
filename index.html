@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark fixed-top" data-bs-theme="dark">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -20,24 +20,133 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Resume</a>
+                            <a class="nav-link" href="#resume">Resume</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Projects</a>
+                            <a class="nav-link" href="#projects">Projects</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="#">Contact Me</a>
+                            <a class="nav-link" href="#contact">Contact Me</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <h1>my nam Jacob</h1>
+
+        <section id="about">
+            <div class="container">
+                <h1 class="text-center">About Me</h1>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <img src="img/jacob_headshot.jpg" class="headshot" alt="Photo of Jacob">
+                    </div>
+                    <div class="col-lg-9">
+                        <p>
+                            Hi! My name is Jacob Foster. I am 24 years old and I am from Katy, Texas. 
+                            I have earned my BBA in Management Information Systems and my Master of Science from the University of Texas McCombs School of Business.
+                            Currently, I am a <strong>data engineer</strong> at <strong>PepsiCo</strong> within the Frito-Lay warehousing division, where I work daily 
+                            with Python, SQL, Microsoft Azure, and enterprise messaging systems. Additionally, I serve as a part-time full-stack engineering consultant for a small financial firm based in Dallas.
+                            Outside of work, I enjoy playing almost any sport, especially baseball, and collecting Legos. I am always eager to gain new experiences and learn new things, whether through traveling,
+                            work, or impromptu opportunities!
+                        </p>
+                        <h4>Fun Facts</h4>
+                        <ul>
+                            <li><strong>Favorite Team:</strong> Houston Astros</li>
+                            <li><strong>Favorite Food:</strong> Buffalo Chicken Sandwich</li>
+                            <li><strong>First Job:</strong> Lifeguard</li>
+                            <li><strong>Favorite Movie: </strong> The Greatest Show</li>
+                            <li><strong>Favorite Animal:</strong> Cat</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume">
+            <h1 class="text-center">Resume</h1>
+            <div class="resumeViewer">
+                <iframe src="files/Jacob Foster Resume.pdf" type="application/pdf" width="100%" height="100%" frameborder="0"></iframe>
+            </div>
+        </section>
+
+        <section id="projects" class="mt-4">
+            <h1 class="text-center">Projects</h1>
+            <div class="container-md mt-4">
+                <div class="row justify-content-center gx-4">
+                    <div class="col-md-6 col-lg-5 mb-4">
+                        <div class="card h-100">
+                            <img src="img/dallas_skyline.jpg" alt="Photo of Dallas skyline" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="https://dallas-restaurant-recs-deb42da2fcb0.herokuapp.com/" target="_blank">Dallas Restaurant Recommender</a></h5>
+                                <p class="card-text">
+                                    Streamlit based AI chatbot application integrating data from Google Places API and OpenAI APIs.
+                                    Delivers quick, relevant responses in natural text to questions or prompts about restaurants in Dallas.
+                                    Check out the website by clicking on the link above!
+                                </p>
+                                <a class="btn btn-secondary" href="https://github.com/JacobFoster13/restaurant_recommender" target="_blank">Link to Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-5 mb-4">
+                        <div class="card h-100">
+                            <img src="img/inventory_photo.jpg" alt="Photo of warehouse" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Inventory Management Application</h5>
+                                <p class="card-text">
+                                    Uses Python Flask backend, following Model-View-Controller architecture principles with a React.js frontend.
+                                    Flask backend connects to MongoDB serverless database for efficient retrieval and storage.
+                                </p>
+                                <a class="btn btn-secondary" href="https://github.com/JacobFoster13/PyReactApp">Link to Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center gx-4">
+                    <div class="col-md-6 col-lg-5 mb-4">
+                        <div class="card h-100">
+                            <img src="img/arduino.jpg" alt="Photo of Dallas skyline" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Arduino Bat Speed Reader</h5>
+                                <p class="card-text">
+                                    Bat speed reader based on accelerometer data from an Arduino M5StickC-Plus (written in C++) that commmunicates data over a REST API
+                                    to a Node.js backend. Results are stored per user in a MongoDB serverless database and a personal record is shown for each user and
+                                    global leaderboard is displayed for all users using React.js.
+                                </p>
+                                <a class="btn btn-secondary" href="https://github.com/JacobFoster13/iotproject" target="_blank">Link to Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-5 mb-4">
+                        <div class="card h-100">
+                            <img src="img/austin_bar.png" alt="Photo of warehouse" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Austin Bar Recommender</h5>
+                                <p class="card-text">
+                                    Jupyter Notebook that uses Google reviews of Austin bars to generate recommendations for users based on their input.
+                                    These are generated using NLP practices such as word embeddings on user input and sentiment and similarity score on 
+                                    existing reviews to generate accurate suggestions. The application is based in Python and uses the spaCy, VADERSentiment,
+                                    and pandas libraries.
+                                </p>
+                                <a class="btn btn-secondary" href="https://github.com/JacobFoster13/bar_recommender" target="_blank">Link to Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="mt-5 mb-4 container text-center">
+                <a href="" class="btn btn-success btn-lg px-5 py-3" style="font-size: x-large;">Contact Me</a>
+            </div>
+            <br>
+        </section>
+
         <footer id="footer">
-            <div class="container-fluid">
+            <div class="container-fluid mt-4">
                 <div class="socials text-center">
                     <a href="https://www.linkedin.com/in/JacobFosterUT" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://www.instagram.com/jacob_foster_13/" target="_blank"><i class="fa-brands fa-instagram"></i></a>

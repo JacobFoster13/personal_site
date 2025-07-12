@@ -2,9 +2,17 @@ body {
     background-color: azure;
 }
 
-footer {
-    background-color: black;
-    padding: 8px;
+iframe {
+    margin-left: 10vw;
+}
+
+section {
+    scroll-margin-top: 80px;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
 }
 
 .fa-brands, .fa-solid {
@@ -12,6 +20,24 @@ footer {
     color: white;
 }
 
+.headshot {
+    height: auto;
+    width: 100%;
+}
+
+.resumeViewer {
+    height: 80vh;
+    width: 80vw;
+    margin-top: 2%;
+}
+
 .socials {
+    background-color: black;
     font-size: 36px;
+    margin: 0 -50px;
+    padding: 8px;
+}
+
+#about {
+    padding-top: 80px;
 }
