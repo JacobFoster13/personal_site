@@ -1,9 +1,16 @@
-body {
-    background-color: azure;
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 iframe {
     margin-left: 10vw;
+}
+
+main {
+    flex: 1;
 }
 
 section {
@@ -18,6 +25,10 @@ section {
 .fa-brands, .fa-solid {
     margin: 4px;
     color: white;
+}
+
+.fa-brands:hover, .fa-solid:hover {
+    color: lightgrey;
 }
 
 .headshot {
@@ -38,6 +49,6 @@ section {
     padding: 8px;
 }
 
-#about {
+#about, #contact-form {
     padding-top: 80px;
 }
